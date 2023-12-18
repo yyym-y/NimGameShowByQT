@@ -44,7 +44,12 @@
 
 如果 :
 $$
-a_1 \oplus a_2 \oplus a_3 \oplus \dots \oplus a_n = 0
+a_1 \oplus a_2 \oplus a_3 \oplus \dots \oplus a_n = \mathrm{ans} = 0
 $$
 那么电脑必胜,  否则玩家必胜
 
+而且每一步的必胜策略为 :
+
+如果 $a_i \oplus \mathrm{ans} < a_i$ , 那么最优的步骤是将第 $i$ 行的 $a_i$ 缩减 $\mathrm{ans} \oplus a_i$
+
+即将两个棋子之间的距离减少 $\mathrm{ans} \oplus a_i$
