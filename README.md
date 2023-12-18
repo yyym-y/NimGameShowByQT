@@ -43,9 +43,11 @@
 至此, 我们就可以得到必胜的条件 :
 
 如果 :
+
 $$
 a_1 \oplus a_2 \oplus a_3 \oplus \dots \oplus a_n = \mathrm{ans} = 0
 $$
+
 那么电脑必胜,  否则玩家必胜
 
 而且每一步的必胜策略为 :
